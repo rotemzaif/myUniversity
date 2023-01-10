@@ -16,7 +16,8 @@ class Student(Person):
         super().__init__(*args)
 
     def __repr__(self):
-        return f'Student({self.identity_num}, {self.name}, {self.courses}, {self.faculty}, {self.address}, {self.start_date})'
+        return f'Student(ID: {self.identity_num}, full name: {self.name}, courses: {self.courses}, faculty: {self.faculty}, ' \
+               f'address: {self.address}, start_date: {self.start_date})'
 
 
 class Teacher(Person):
@@ -27,7 +28,7 @@ class Teacher(Person):
         self.start_date = start_date
 
     def __repr__(self):
-        return f'Teacher({self.identity_num}, {self.name}, {self.faculties}, {self.start_date})'
+        return f'Teacher(ID: {self.identity_num}, full name: {self.name}, faculties: {self.faculties}, start date: {self.start_date})'
 
 
 
